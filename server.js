@@ -11,7 +11,11 @@ app.use(express.json());
 
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/water", require("./routes/waterRoutes"));
-
+app.use(
+  "/api/products",
+  require("./routes/productRoutes")
+);
+app.use("/api/orders", require("./routes/orderRoutes"));
 app.listen(process.env.PORT, () => {
   console.log("Server Running");
 });

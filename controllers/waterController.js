@@ -57,7 +57,7 @@ exports.updateWater = (req, res) => {
   );
 };
 
-exports.deleteWater = (req, res) => {
+exports.deleteWater = (req, res) => { 
   const sql =
     "DELETE FROM water_entries WHERE id=?";
 
